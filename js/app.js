@@ -1,8 +1,10 @@
+const body = document.querySelector("body");
 const popupContainer = document.querySelector(".popup-container");
 const popup = document.querySelector(".popup");
 const btnClose = document.querySelector(".btn-close");
 
 function popUp(){
+    body.style.overflowY = "hidden";
     popupContainer.style.display = "flex";
     setTimeout(() => {
         popupContainer.style.opacity = "1";
