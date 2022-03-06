@@ -84,13 +84,12 @@ body {
     width: 100vw;
     z-index: 1000;
     background-color: #002159a9;
-    display: flex;
     justify-content: center;
     align-items: center;
     display: none;
     opacity: 0;
     transition: 0.5s ease;
-    
+
     .popup {
         height: 80%;
         width: 50%;

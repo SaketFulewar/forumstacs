@@ -3,8 +3,8 @@ const popupContainer = document.querySelector(".popup-container");
 const popup = document.querySelector(".popup");
 const btnClose = document.querySelector(".btn-close");
 
+body.style.overflowY = "hidden";
 function popUp(){
-    body.style.overflowY = "hidden";
     popupContainer.style.display = "flex";
     setTimeout(() => {
         popupContainer.style.opacity = "1";
@@ -13,11 +13,10 @@ function popUp(){
 }
 
     btnClose.addEventListener("click",()=>{
-        popupContainer.style.opacity = "0";
+        // popupContainer.style.opacity = "0";
+        popupContainer.style.display = "none";
+        body.style.overflowY = "scroll";
         popUp.style.display = "none";
-        setTimeout(() => {
-            popupContainer.style.display = "none";
-        }, 500);
     })
 
 setTimeout(() => {

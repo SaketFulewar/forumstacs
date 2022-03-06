@@ -88,9 +88,6 @@ body {
   width: 100vw;
   z-index: 1000;
   background-color: #002159a9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
