@@ -483,4 +483,308 @@ footer .copyright {
 .bg {
   background-color: #F02828;
 }
+
+.register-sec {
+  height: 75vh;
+  width: 100vw;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-sec .form-container {
+  padding: 1rem;
+}
+
+.register-sec .form-container .left {
+  height: 100%;
+  width: 50%;
+  background-color: #002159;
+  text-align: center;
+  padding: 2rem 4rem;
+}
+
+.register-sec .form-container .left img {
+  width: 100%;
+}
+
+.register-sec .form-container .left .first {
+  font-size: 4rem;
+  display: inline-block;
+  -webkit-animation: upDownAnimationPhase2 0.6s linear infinite;
+          animation: upDownAnimationPhase2 0.6s linear infinite;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  font-weight: 1000;
+  color: #0042B5;
+  margin-top: 1rem;
+}
+
+.register-sec .form-container .left .second {
+  font-size: 4rem;
+  display: inline-block;
+  -webkit-animation: upDownAnimationPhase1 0.6s linear infinite;
+          animation: upDownAnimationPhase1 0.6s linear infinite;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  font-weight: 1000;
+  color: white;
+  margin-top: 1rem;
+}
+
+.register-sec .form-container .left .content-registration {
+  color: white;
+  border: 2px solid white;
+  padding: 1rem;
+}
+
+.register-sec .form-container .right {
+  background-color: white;
+  width: 40rem;
+  padding: 4rem 1rem 0rem 1rem;
+}
+
+.register-sec .form-container .right h2 {
+  color: #2e2e2e;
+  margin-bottom: 1rem;
+}
+
+.register-sec .form-container .right .name-lastname input {
+  height: 2.5rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0;
+  border: 1px solid lightgray;
+  outline: none;
+  font-size: 1rem;
+  color: #585858;
+}
+
+.register-sec .form-container .right .name-lastname input::-webkit-input-placeholder {
+  color: #585858;
+}
+
+.register-sec .form-container .right .name-lastname input:-ms-input-placeholder {
+  color: #585858;
+}
+
+.register-sec .form-container .right .name-lastname input::-ms-input-placeholder {
+  color: #585858;
+}
+
+.register-sec .form-container .right .name-lastname input::placeholder {
+  color: #585858;
+}
+
+.register-sec .form-container .right .event-select {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.register-sec .form-container .right .event-select select {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0;
+  border: 1px solid lightgray;
+  outline: none;
+  color: #585858;
+  font-size: 1rem;
+  padding: 0 0.3rem;
+}
+
+.register-sec .form-container .right .event-select select option {
+  color: #585858;
+  font-size: 1rem;
+}
+
+.register-sec .form-container .right .event-select .check-multi {
+  margin-top: 0.25rem;
+}
+
+.register-sec .form-container .right .event-select .check-multi #multiparti {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.register-sec .form-container .right .event-select .check-multi label {
+  margin-left: 1rem;
+  color: #585858;
+}
+
+.register-sec .form-container .right .semister-select {
+  border-style: dotted;
+  border-color: #cccccc;
+  border-width: 0.18rem;
+  padding: 0.4rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.register-sec .form-container .right .semister-select input {
+  height: 1rem;
+  width: 1rem;
+}
+
+.register-sec .form-container .right .semister-select label {
+  color: #585858;
+}
+
+.register-sec .form-container .right .branch-select {
+  margin-top: 1rem;
+}
+
+.register-sec .form-container .right .branch-select select {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0;
+  border: 1px solid lightgray;
+  outline: none;
+  color: #585858;
+  font-size: 1rem;
+  padding: 0 0.3rem;
+}
+
+.register-sec .form-container .right .email-phone {
+  margin-top: 1rem;
+}
+
+.register-sec .form-container .right .email-phone .email input {
+  height: 2.5rem;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border-radius: 0;
+  border: 1px solid lightgray;
+  outline: none;
+  font-size: 1rem;
+  color: #585858;
+}
+
+.register-sec .form-container .right .email-phone .contact {
+  margin-top: 1rem;
+}
+
+.register-sec .form-container .right .email-phone .contact input {
+  height: 2.5rem;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border-radius: 0;
+  border: 1px solid lightgray;
+  outline: none;
+  font-size: 1rem;
+  color: #585858;
+}
+
+.register-sec .form-container .right button {
+  width: 100%;
+  background-color: #002159;
+  color: white;
+  border-radius: 0;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+@-webkit-keyframes upDownAnimationPhase1 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  20% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes upDownAnimationPhase1 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  20% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes upDownAnimationPhase2 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  20% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  60% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes upDownAnimationPhase2 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  20% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  60% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
 /*# sourceMappingURL=main.css.map */
