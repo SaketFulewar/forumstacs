@@ -120,7 +120,10 @@ body {
 .popup-container .popup .left {
   width: 50%;
   height: 100%;
-  background-color: #002159;
+  background-image: url("img/technova-ad.png");
+  -webkit-box-shadow: 0 0 10px rgba(49, 49, 49, 0.829) inset;
+          box-shadow: 0 0 10px rgba(49, 49, 49, 0.829) inset;
+  background-size: cover;
 }
 
 .popup-container .popup .right {
@@ -558,6 +561,7 @@ footer .copyright {
 
 .register-sec .form-container .right .name-lastname input {
   height: 2.5rem;
+  width: 49%;
   padding: 1rem 0.5rem;
   border-radius: 0;
   border: 1px solid lightgray;
