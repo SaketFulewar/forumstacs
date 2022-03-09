@@ -83,7 +83,7 @@ body {
 }
 
 .popup-container {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   z-index: 1000;
@@ -223,10 +223,6 @@ header .menu li a:hover::after {
 .hero-main {
   background-color: #002159;
   padding: 2rem 0;
-}
-
-.hero-main .hr-container {
-  height: 30rem;
 }
 
 .hero-main .hr-container .left-sec {
@@ -789,6 +785,89 @@ footer .copyright {
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .container {
+    width: 350px;
+    overflow-x: hidden;
+  }
+  body {
+    background-color: lightblue;
+    width: 100vw;
+  }
+  header {
+    width: 100vw;
+  }
+  header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .events-sec .container .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .abt-forum .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .abt-forum .container .about-content {
+    text-align: center;
+  }
+  .abt-forum .container .about-content h1 {
+    margin-top: 1rem;
+  }
+  .abt-forum .container .about-content p {
+    width: 100%;
+  }
+  .abt-forum .container .about-content button {
+    margin-bottom: 1rem;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .container .grid-footer {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    background-color: #0042B5;
+  }
+  .popup {
+    display: none;
+  }
+  .popup .left {
+    background-color: #0042b5;
+  }
+  .popup .right {
+    background-color: yellow;
   }
 }
 /*# sourceMappingURL=main.css.map */

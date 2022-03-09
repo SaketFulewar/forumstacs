@@ -79,7 +79,7 @@ body {
 //-------------popup-------------------
 
 .popup-container {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     z-index: 1000;
@@ -89,6 +89,7 @@ body {
     display: none;
     opacity: 0;
     transition: 0.5s ease;
+
 
     .popup {
         height: 80%;
@@ -205,7 +206,6 @@ header {
     padding: 2rem 0;
 
     .hr-container {
-        height: 30rem;
 
         .left-sec {
             flex-basis: 50%;
@@ -694,5 +694,93 @@ footer {
 
     100% {
         transform: translateY(0px);
+    }
+}
+
+// --------------------------Media Query Mobile--------------------//
+
+@media screen and (max-width: 412px) {
+    .container {
+        width: 350px;
+        overflow-x: hidden;
+    }
+
+    body {
+        background-color: lightblue;
+        width: 100vw;
+    }
+
+    header {
+        width: 100vw;
+
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    .hero-main {
+        .container {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .events-sec {
+        .container {
+            .card-container {
+                display: flex;
+            }
+        }
+    }
+
+    .abt-forum {
+        .container {
+            flex-direction: column;
+            text-align: center;
+
+            .about-content {
+                text-align: center;
+
+                h1 {
+                    margin-top: 1rem;
+                }
+
+                p {
+                    width: 100%;
+                }
+
+                button {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .grid-footer {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                background-color: #0042B5;
+            }
+        }
+    }
+
+    .popup {
+        display: none;
+
+        .left {
+            background-color: #0042b5;
+        }
+
+        .right {
+            background-color: yellow;
+        }
     }
 }
